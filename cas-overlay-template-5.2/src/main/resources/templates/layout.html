@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">CAS &#8211; Central Authentication Service</title>
+
+
+    <link rel="stylesheet" th:href="@{#{webjars.fontawesomemin.css}}"/>
+    <link type="text/css" rel="stylesheet" th:href="@{#{webjars.bootstrapmin.css}}"/>
+    <link type="text/css" rel="stylesheet" th:href="@{#{webjars.latomin.css}}"/>
+
+    <link rel="stylesheet" th:href="@{${#themes.code('standard.custom.css.file')}}"/>
+
+    <link rel="icon" th:href="@{/favicon.ico}" type="image/x-icon"/>
+    
+    
+    <!--css list for seaboxdata-->
+    <!--add by SongChaoqun-->
+    <link rel="stylesheet" href="seaboxdata/resources/css/seaboxdata_css.css"/>
+    <link href="seaboxdata/resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="seaboxdata/data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="seaboxdata/files/index/styles.css" type="text/css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="utils/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="utils/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!--end -->
+
+    <!--js list for seaboxdata-->
+    <!--add by SongChaoqun-->
+    <script type="text/javascript" src="utils/zxcvbn/4.3.0/zxcvbn.js"></script>
+    <script type="text/javascript" src="utils/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="utils/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="utils/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="utils/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--end-->
+
+    <script type="text/javascript" th:src="@{#{webjars.zxcvbn.js}}"></script>
+    <script type="text/javascript" th:src="@{#{webjars.jquerymin.js}}"></script>
+    <script type="text/javascript" th:src="@{#{webjars.jqueryui.js}}"></script>
+    <script type="text/javascript" th:src="@{#{webjars.jquerycookie.js}}"></script>
+    <script src="//www.google.com/recaptcha/api.js" async defer th:if="${recaptchaSiteKey}"></script>
+    <script th:src="@{#{webjars.bootstrapmin.js}}"></script>
+
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+
+        var trackGeoLocation = /*[[${trackGeoLocation}]]*/ === "true";
+
+        var googleAnalyticsTrackingId = /*[[${googleAnalyticsTrackingId}]]*/;
+
+        if (googleAnalyticsTrackingId != null && googleAnalyticsTrackingId != '') {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', googleAnalyticsTrackingId, 'auto');
+            ga('send', 'pageview');
+        }
+
+        /*]]>*/
+    </script>
+</head>
+<!-- 
+<body>
+<div id="container" class="container"> -->
+<body id="cas" class="body_bg">
+
+<div id="container" class="seaboxdb_container">
+
+    <div th:replace="fragments/logo"/>
+    <div layout:fragment="content" id="content">
+        <h1/>
+        <p/>
+    </div>
+    <div th:replace="fragments/footer"/>
+</div>
+<div th:insert="fragments/bottom"/>
+
+</body>
+</html>

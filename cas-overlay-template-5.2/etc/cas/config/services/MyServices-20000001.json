@@ -1,0 +1,16 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(http|https|imaps)://.*",
+  "name" : "HTTP, HTTPS and IMAPS",
+  "id" : 20000001,
+  "description" : "This service definition authorizes all application urls that support HTTPS and IMAPS protocols.",
+  "evaluationOrder" : 1,
+  "accessStrategy" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "enabled" : true,
+    "ssoEnabled" : true
+  },
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  }
+}

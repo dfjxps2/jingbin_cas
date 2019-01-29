@@ -1,0 +1,130 @@
+/*create by SongChaoqun*/
+
+.login_div{
+    width:40%;
+    margin-left:60%;
+}
+
+.login_style{
+    margin: 0px;
+    background: rgba(255, 255, 255, 0.2) url('../../images/index/bg.png') no-repeat fixed center center;
+    background-size: cover;
+    position: static;
+    left: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+
+
+#seaboxdata_logo{
+    display: block;
+    background: url(../../images/index/u151.png) no-repeat;  
+    -moz-background-size: 200px 79px;
+    -o-background-size: 200px 79px;
+/*
+	 background-size: 200px 79px;
+    -webkit-background-size: 200px 79px;
+	*/
+    text-indent: -999em;
+    float: left;
+    height: 100px;
+    width: 80%;
+    margin-left: 50px;
+    border: 0px;
+    color: white;
+}
+
+.seaboxdb_container {
+    /*border: 1px solid black;*/
+    width: 100% !important;
+    padding: 0px;
+}
+
+.seaboxdt_box {
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 2px solid #CBDAD9;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px  ;
+    background: transparent;
+    /*background: rgba(209,242,253);*/
+}
+
+.tel_css {
+    font-family: 'Arial Negreta cursiva', 'Arial Normal', 'Arial';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.seaboxdt_footer {
+    bottom: 10px;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    padding: 0px;
+}
+
+.seaboxdt_footer>div{
+    width:100%;
+    padding-left:10%;
+    padding-right:10%;
+    float:left;
+    border:0px solid blue;
+    text-align: center;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+    line-height: normal;
+}
+
+.seaboxdt_footer>div>div{
+    width:25%;
+    float:left;
+    /*border:1px solid red;*/
+}
+
+.footer_line{
+    width:100%;
+    /*height:2px;
+    float:left;*/
+}
+
+.body_bg{
+    background-color:rgba(255, 255, 255, 0.2);
+    background-image:url('../../images/index/bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.input_row{
+    margin-left: 25px !important;
+    margin-right: 35px !important;
+    margin-top: 40px;
+}
+
+.btn-row{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.btn-row>input{
+    margin-left:10px;
+    margin-right:10px;
+    width:80px;
+}
+
+.input_font{
+    font-size:14px;
+    padding-left:15px;
+    padding-top:3px;
+    padding-bottom: 3px;
+}
